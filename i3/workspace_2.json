@@ -1,0 +1,24 @@
+{
+    "border": "normal",
+    "current_border_width": 3,
+    "floating": "auto_off",
+    "geometry": {
+       "height": 847,
+       "width": 1594,
+       "x": 3,
+       "y": 22
+    },
+    "name": "Slack - Sofiac",
+    "percent": 1,
+    "swallows": [
+       {
+        "class": "^Slack$",
+        "instance": "^slack$",
+        "title": "^Slack\\ \\-\\ Sofiac$",
+        "transient_for": "^$",
+        "window_role": "^browser\\-window$"
+       }
+    ],
+    "type": "con"
+}
+

@@ -1,0 +1,140 @@
+{
+    "border": "normal",
+    "floating": "auto_off",
+    "layout": "stacked",
+    "percent": 0.5,
+    "type": "con",
+    "nodes": [
+        {
+            "border": "normal",
+            "current_border_width": 2,
+            "floating": "auto_off",
+            "geometry": {
+               "height": 458,
+               "width": 734,
+               "x": 0,
+               "y": 0
+            },
+            "name": "johnny.harold@lancia:~",
+            "percent": 0.333333333333333,
+            "swallows": [
+               {
+                "class": "^Gnome\\-terminal$",
+                "window_role": "^gnome\\-terminal1$"
+               }
+            ],
+            "type": "con"
+        },
+        {
+            "border": "normal",
+            "current_border_width": 2,
+            "floating": "auto_off",
+            "geometry": {
+               "height": 458,
+               "width": 734,
+               "x": 0,
+               "y": 0
+            },
+            "name": "johnny.harold@lancia:~",
+            "percent": 0.333333333333333,
+            "swallows": [
+               {
+                "class": "^Gnome\\-terminal$",
+                "window_role": "^gnome\\-terminal2$"
+               }
+            ],
+            "type": "con"
+        },
+        {
+            "border": "normal",
+            "current_border_width": 2,
+            "floating": "auto_off",
+            "geometry": {
+               "height": 458,
+               "width": 734,
+               "x": 0,
+               "y": 0
+            },
+            "name": "johnny.harold@lancia:~",
+            "percent": 0.333333333333333,
+            "swallows": [
+               {
+                "class": "^Gnome\\-terminal$",
+                "window_role": "^gnome\\-terminal3$"
+               }
+            ],
+            "type": "con"
+        }
+    ]
+}
+
+{
+    "border": "normal",
+    "floating": "auto_off",
+    "layout": "stacked",
+    "percent": 0.5,
+    "type": "con",
+    "nodes": [
+        {
+            "border": "normal",
+            "current_border_width": 2,
+            "floating": "auto_off",
+            "geometry": {
+               "height": 458,
+               "width": 734,
+               "x": 0,
+               "y": 0
+            },
+            "name": "johnny.harold@lancia:~",
+            "percent": 0.333333333333333,
+            "swallows": [
+               {
+                "class": "^Gnome\\-terminal$",
+                "window_role": "^gnome\\-terminal4$"
+               }
+            ],
+            "type": "con"
+        },
+        {
+            "border": "normal",
+            "current_border_width": 2,
+            "floating": "auto_off",
+            "geometry": {
+               "height": 458,
+               "width": 734,
+               "x": 0,
+               "y": 0
+            },
+            "name": "johnny.harold@lancia:~",
+            "percent": 0.333333333333333,
+            "swallows": [
+               {
+                "class": "^Gnome\\-terminal$",
+                "window_role": "^gnome\\-terminal5$"
+               }
+            ],
+            "type": "con"
+        },
+        {
+            "border": "normal",
+            "current_border_width": 2,
+            "floating": "auto_off",
+            "geometry": {
+               "height": 458,
+               "width": 734,
+               "x": 0,
+               "y": 0
+            },
+            "name": "johnny.harold@lancia:~",
+            "percent": 0.333333333333333,
+            "swallows": [
+               {
+                "class": "^Gnome\\-terminal$",
+                "window_role": "^gnome\\-terminal6$"
+               }
+            ],
+            "type": "con"
+        }
+    ]
+}
+
