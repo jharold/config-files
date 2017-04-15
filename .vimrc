@@ -1,12 +1,13 @@
 "----------------
 " Color Schemes |
 "----------------
+" colorscheme base16-paraiso
 " colorscheme bvemu 
 " colorscheme Mustang
 " colorscheme base16-atelier-cave
 " colorscheme base16-dracula
-" colorscheme base16-hopscotch
-colorscheme base16-solar-flare
+ colorscheme base16-hopscotch
+" colorscheme base16-solar-flare
 
 " Theme randomizer:
 "
@@ -39,6 +40,7 @@ set number            " Show line numbers.
 set showcmd           " Show the last command entered (bottom right.)
 set showmatch         " Highlights matching [, {, or (.
 set termguicolors     " Enable 24-bit color
+set t_ut=             " Background color erase (Fills the background with the theme color)
 set wildmenu          " Visual tab completion for command menu.
 syntax on             " Turn on syntax highlighting.
 
