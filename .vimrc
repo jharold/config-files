@@ -6,8 +6,8 @@
 " colorscheme Mustang
 " colorscheme base16-atelier-cave
 " colorscheme base16-dracula
- colorscheme base16-hopscotch
-" colorscheme base16-solar-flare
+" colorscheme base16-hopscotch
+ colorscheme base16-solarflare
 
 " Theme randomizer:
 "
@@ -32,6 +32,8 @@ set tabstop=2         " The number of spaces/columns that are shown per <TAB> ch
 " UI Settings |
 "--------------
 filetype indent on    " Enable language specific indentation schemes based on filetype.
+map <2-LeftMouse> :se nonu!<CR>
+                      " Toggle line numbers by double left-clicking
 set background=dark   " Enable the dark version of the current colorscheme
 set backupcopy=yes    " On write: Make a copy of the file and overwrite the original one
 set laststatus=2      " Show statusline always, needed to display airline status persistently.
@@ -107,3 +109,4 @@ autocmd VimEnter * SyntasticToggleMode " disable syntastic by default
 "let g:syntastic_auto_loc_list = 1
 "let g:syntastic_check_on_open = 1                  " Check for syntax errors on open
 "let g:syntastic_check_on_wq = 0                    " Check for syntax errors on save (0 = disabled)
+
