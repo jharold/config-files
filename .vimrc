@@ -15,25 +15,25 @@ set hidden            " Buffers become hidden when abandoned rather than being u
 nn <leader>sv :source $MYVIMRC<cr>
                       " Source / reload .vimrc.
 "{}
-  ino     {<CR>       {<CR>}<Esc>ko<Tab>
-  ino     {<Space>    {<Space><Space>}<Left><Left>
+"  ino     {<CR>       {<CR>}<Esc>ko<Tab>
+"  ino     {<Space>    {<Space><Space>}<Left><Left>
 "[]
-  ino     [           []<Left>
-  ino     [[          []<Left>
-  ino     []          []<Left>
+"  ino     [           []<Left>
+"  ino     [[          []<Left>
+"  ino     []          []<Left>
 "()
-  ino     (           ()<Left>
-  ino     ((          ()<Left>
-  ino     ()          ()<Left>
+"  ino     (           ()<Left>
+"  ino     ((          ()<Left>
+"  ino     ()          ()<Left>
 "<>
-  ino     <           <><Left>
-  ino     </          </><Left>
+"  ino     <           <><Left>
+"  ino     </          </><Left>
 "''
-  ino     '           ''<Left>
-  ino     ''          ''<Left>
+"  ino     '           ''<Left>
+"  ino     ''          ''<Left>
 """
-  ino     "           ""<Left>
-  ino     ""          ""<Left>
+"  ino     "           ""<Left>
+"  ino     ""          ""<Left>
 
 "-----------------------------
 " Abbreviations / Autocorrect 
@@ -60,7 +60,9 @@ let g:airline_theme = 'jellybeans'
 
 set background=dark   " Enable the dark version of the current colorscheme.
                       " Below settings may be necessary for displaying 256 colors in vim while 
-                      " using tmux / putty.
+                      " using tmux / putty.  
+                      " Note 1: Set these as well as termguicolors before setting a colorscheme.
+                      " Note 2: <Ctrl-V><Esc> inserts an escape character ().
 "set t_8f=[38;2;%lu;%lu;%lum
 "set t_8b=[48;2;%lu;%lu;%lum
 set termguicolors     " Enable 24-bit color.
@@ -197,4 +199,7 @@ call plug#begin()
   Plug 'vim-airline/vim-airline-themes'
   Plug 'airblade/vim-gitgutter'
   Plug 'tpope/vim-fugitive'
+  "Plug 'Valloric/YouCompleteMe'
+  Plug 'tpope/vim-surround'
+  Plug 'majutsushi/tagbar'
 call plug#end()
