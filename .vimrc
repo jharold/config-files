@@ -82,6 +82,7 @@ colorscheme base16-solarflare
 
 command! Jsonpretty %!python -m json.tool
 command! Prettyjson Jsonpretty
+command! Strip %s/\s\+$//e
 
 nnoremap <s-l> :set list!<CR>
 nnoremap <s-tab> :call RevealTabs()<CR>
