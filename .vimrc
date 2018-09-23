@@ -35,6 +35,8 @@ nn <leader>sv :source $MYVIMRC<cr>
 "  ino     "           ""<Left>
 "  ino     ""          ""<Left>
 
+nnoremap <silent><C-p> :CtrlSpace O<CR> " Ctrl-p: CtrlSpace fuzzy search
+
 "-----------------------------
 " Abbreviations / Autocorrect 
 "-----------------------------
