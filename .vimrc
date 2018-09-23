@@ -198,6 +198,7 @@ set wildmenu          " Display a menu when tab completing partially entered com
 call plug#begin()
   Plug 'vim-airline/vim-airline'
   Plug 'vim-airline/vim-airline-themes'
+  Plug 'vim-ctrlspace/vim-ctrlspace'
   Plug 'airblade/vim-gitgutter'
   Plug 'tpope/vim-fugitive'
   "Plug 'Valloric/YouCompleteMe'
