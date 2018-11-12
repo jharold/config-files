@@ -6,6 +6,21 @@ set backupcopy=yes    " On write: Make a copy of the file and overwrite the orig
 set hidden            " Buffers become hidden when abandoned rather than being unloaded.
 "set updatetime=1000   " Milliseconds of inactivity before the swap file is written to disk.
 
+"----------
+" Vim-Plug 
+"----------
+
+call plug#begin()
+  Plug 'airblade/vim-gitgutter'
+  Plug 'chriskempson/base16-vim'
+  Plug 'majutsushi/tagbar'
+  Plug 'tpope/vim-fugitive'
+  Plug 'tpope/vim-surround'
+  Plug 'vim-airline/vim-airline'
+  Plug 'vim-airline/vim-airline-themes'
+  Plug 'vim-ctrlspace/vim-ctrlspace'
+  "Plug 'Valloric/YouCompleteMe'
+call plug#end()
 "---------
 " Mapping 
 "---------
@@ -192,18 +207,3 @@ set wildmenu          " Display a menu when tab completing partially entered com
 "let g:syntastic_auto_loc_list = 1
 "let g:syntastic_check_on_open = 1                  " Check for syntax errors on open
 "let g:syntastic_check_on_wq = 0                    " Check for syntax errors on save (0 = disabled)
-
-"----------
-" Vim-Plug 
-"----------
-
-call plug#begin()
-  Plug 'vim-airline/vim-airline'
-  Plug 'vim-airline/vim-airline-themes'
-  Plug 'vim-ctrlspace/vim-ctrlspace'
-  Plug 'airblade/vim-gitgutter'
-  Plug 'tpope/vim-fugitive'
-  "Plug 'Valloric/YouCompleteMe'
-  Plug 'tpope/vim-surround'
-  Plug 'majutsushi/tagbar'
-call plug#end()
