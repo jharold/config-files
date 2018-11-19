@@ -21,6 +21,7 @@ call plug#begin()
   Plug 'vim-ctrlspace/vim-ctrlspace'
   "Plug 'Valloric/YouCompleteMe'
 call plug#end()
+
 "---------
 " Mapping 
 "---------
@@ -50,7 +51,18 @@ nn <leader>sv :source $MYVIMRC<cr>
 "  ino     "           ""<Left>
 "  ino     ""          ""<Left>
 
-nnoremap <silent><C-p> :CtrlSpace O<CR> " Ctrl-p: CtrlSpace fuzzy search
+" CtrlSpace fuzzy search
+nnoremap <silent><C-p> :CtrlSpace O<CR>
+
+if executable("ag")
+    let g:CtrlSpaceGlobCommand = 'ag -l --nocolor -g ""'
+endif
+
+" Easier split navigation
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
 
 "-----------------------------
 " Abbreviations / Autocorrect 
