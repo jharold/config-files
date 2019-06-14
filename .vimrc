@@ -4,6 +4,7 @@ filetype on           " Enable file type detection (recommended when nocp is set
 filetype plugin on    " Enable plugin files for specific file types.
 set backupcopy=yes    " On write: Make a copy of the file and overwrite the original one.
 set hidden            " Buffers become hidden when abandoned rather than being unloaded.
+set encoding=UTF-8
 "set updatetime=1000   " Milliseconds of inactivity before the swap file is written to disk.
 
 "----------
@@ -12,13 +13,14 @@ set hidden            " Buffers become hidden when abandoned rather than being u
 
 call plug#begin()
   Plug 'airblade/vim-gitgutter'
-  Plug 'chriskempson/base16-vim'
+  Plug 'chriskempson/base16-vim', {'do': 'git checkout dict_fix'}
   Plug 'majutsushi/tagbar'
   Plug 'tpope/vim-fugitive'
   Plug 'tpope/vim-surround'
   Plug 'vim-airline/vim-airline'
   Plug 'vim-airline/vim-airline-themes'
   Plug 'vim-ctrlspace/vim-ctrlspace'
+  Plug 'ryanoasis/vim-devicons'
   "Plug 'Valloric/YouCompleteMe'
 call plug#end()
 
@@ -197,6 +199,7 @@ set title             " Set the title bar string.
 set titlestring=%t%(\ %M%)%(\ (%{expand(\"%:p:h\")})%)%(\ %a%)\ -\ %{v:servername}
 set wildignore=*.swp  " Ignore these file types.
 set wildmenu          " Display a menu when tab completing partially entered commands.
+set colorcolumn=100
 
 "-------------------
 " Pathogen Settings 
